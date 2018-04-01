@@ -1,4 +1,4 @@
-const export RECEIVE_POLLS = 'RECEIVE_POLLS'
+export const RECEIVE_POLLS = 'RECEIVE_POLLS';
 
 export function receivePolls (polls) {
   return {
