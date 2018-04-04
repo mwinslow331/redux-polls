@@ -21,7 +21,7 @@ class App extends Component {
         ? null
         : <Leaderboard /> }
         <AddPoll />
-        <Poll match={{params: {id: 'vthrdm985a262al8qx3do'}}}/>
+        <Poll match={{params: {id: 'loxhs1bqm25b708cmbf3g'}}}/>
       </div>
     )
   }

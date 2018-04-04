@@ -1,4 +1,5 @@
 import {RECEIVE_POLLS, ADD_POLL} from '../actions/polls';
+import { SAVE_ANSWER } from '../actions/answers';
 
 
 export default function polls (state = {}, action) {
@@ -12,6 +13,18 @@ export default function polls (state = {}, action) {
       return {
         ...state,
         [action.poll.id]: action.poll,
+      }
+    case SAVE_ANSWER :
+      const { answer, id, authedUser } = action
+      const poll = state[id]
+      const votesKey = answer + 'Votes'
+
+      return {
+        ...state,
+        [action.id]: {
+          ...poll,
+          [votesKey]: poll[votesKey].concat([authedUser])
+        }
       }
     default :
       return state
