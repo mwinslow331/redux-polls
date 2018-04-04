@@ -1,4 +1,14 @@
 let users = {
+  mike_winslow: {
+    id: 'mike_winslow',
+    name: 'Mike Winslow',
+    avatarURL: 'https://avatars1.githubusercontent.com/u/21691876?s=400&u=313c88f76490d57fc73f3ac5b2f5350b9a95cd48&v=4',
+    answers: {
+      "am8ehyc8byjqgar0jgpub9": 'b',
+      "xj352vofupe1dqz9emx13r": 'a',
+    },
+    polls: []
+  },
   sarah_edo: {
     id: 'sarah_edo',
     name: 'Sarah Drasner',
